@@ -1,0 +1,46 @@
+﻿▲ Next.js 16.3.4 (webpack)
+- Local:         http://localhost:3001
+- Network:       http://172.20.10.2:3001
+- Environments: .env.local
+✓ Ready in 2.1s
+node.exe : ⚠ Attempted to load 
+@next/swc-win32-x64-msvc, but an error occurred: 
+\\?\C:\Users\Utente\Desktop\documenti elia 
+(appunti)\fantacalcio\fanta27\coach-beard-starter 
+2\coach-beard-starter\node_modules\@next\swc-win32
+-x64-msvc\next-swc.win32-x64-msvc.node non � 
+un'applicazione di Win32 valida.
+In riga:1 car:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (⚠ At 
+   tempted to ...i Win32 valida.:String) [], Rem  
+  oteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+\\?\C:\Users\Utente\Desktop\documenti elia 
+(appunti)\fantacalcio\fanta27\coach-beard-starter 
+2\coach-beard-starter\node_modules\@next\swc-win32
+-x64-msvc\next-swc.win32-x64-msvc.node
+✓ Running next.config.ts took 792ms
+  Skipping creating a lockfile at C:\Users\Utente\Desktop\documenti elia (appunti)\fantacalcio\fanta27\coach-beard-starter 2\coach-beard-starter\.next\dev\lock because we're using WASM bindings
+
+○ Compiling /api/health ...
+ GET /api/health 200 in 4.8s (next.js: 4.4s, application-code: 433ms)
+⚠ ./src/lib/auction-api.ts
+Attempted import error: 'getDb' is not exported 
+from './db' (imported as 'getDb').
+
+Import trace for requested module:
+./src/lib/auction-api.ts
+./src/app/api/auction/state/route.ts
+ GET /api/auction/state 500 in 1184ms (next.js: 1076ms, application-code: 109ms)
+○ Compiling /api/auction/state ...
+ GET /api/auction/state 200 in 838ms (next.js: 428ms, application-code: 411ms)
+⚠ ./src/app/api/auction/start/route.ts
+Attempted import error: 'getDb' is not exported 
+from '@/lib/auction-api' (imported as 'getDb').
+
+Import trace for requested module:

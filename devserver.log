@@ -1,0 +1,45 @@
+﻿▲ Next.js 16.3.4 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://172.20.10.2:3000
+- Environments: .env.local
+✓ Ready in 1220ms
+node.exe : ⚠ Attempted to load 
+@next/swc-win32-x64-msvc, but an error occurred: 
+\\?\C:\Users\Utente\Desktop\documenti elia 
+(appunti)\fantacalcio\fanta27\coach-beard-starter 
+2\coach-beard-starter\node_modules\@next\swc-win32
+-x64-msvc\next-swc.win32-x64-msvc.node non � 
+un'applicazione di Win32 valida.
+In riga:1 car:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (⚠ At 
+   tempted to ...i Win32 valida.:String) [], Rem  
+  oteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+\\?\C:\Users\Utente\Desktop\documenti elia 
+(appunti)\fantacalcio\fanta27\coach-beard-starter 
+2\coach-beard-starter\node_modules\@next\swc-win32
+-x64-msvc\next-swc.win32-x64-msvc.node
+✓ Running next.config.ts took 293ms
+  Skipping creating a lockfile at C:\Users\Utente\Desktop\documenti elia (appunti)\fantacalcio\fanta27\coach-beard-starter 2\coach-beard-starter\.next\dev\lock because we're using WASM bindings
+
+○ Compiling /api/obiettivi ...
+[obiettivi] START
+[obiettivi] Foglio P errore: The operation was 
+aborted due to timeout
+[obiettivi] Foglio D errore: The operation was 
+aborted due to timeout
+[obiettivi] Foglio C errore: The operation was 
+aborted due to timeout
+[obiettivi] Foglio A errore: The operation was 
+aborted due to timeout
+[obiettivi] fetched: { P: 0, D: 0, C: 0, A: 0 }
+ GET /api/obiettivi 200 in 14.9s (next.js: 4.4s, application-code: 10.5s)
+⚠ ./src/app/api/health/route.ts
+Attempted import error: 'getConfig' is not 
+exported from '@/lib/db' (imported as 
+'getConfig').

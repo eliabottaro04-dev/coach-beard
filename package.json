@@ -1,0 +1,46 @@
+{
+  "name": "coach-beard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "build:dataset": "node scripts/build-dataset.mjs",
+    "build:abbinamenti": "node scripts/parse-abbinamenti.mjs",
+    "ingest": "node scripts/ingest.mjs",
+    "verify:dataset": "node scripts/verify-dataset.mjs",
+    "test:data": "node scripts/test-data-quality.mjs",
+    "test:engine": "node scripts/test-engine.test.mjs",
+    "test:resolver": "node scripts/test-resolver.test.mjs",
+    "test:registry": "tsx scripts/test-registry.test.ts",
+    "test:agent": "tsx scripts/test-agent.test.ts",
+    "bot:telegram": "tsx scripts/telegram-bot.ts",
+    "test:telegram": "tsx scripts/test-telegram.test.ts",
+    "test:export": "tsx scripts/test-export.test.ts",
+    "sim:auction": "tsx scripts/simulate-auction.ts",
+    "export:csv": "tsx scripts/export-csv.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "next": "^16.3.4",
+    "pg": "^8.13.1",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^22.19.1",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.3.4",
+    "tailwindcss": "^4.1.17",
+    "tsx": "^4.23.13",
+    "typescript": "^5.9.3"
+  }
+}
