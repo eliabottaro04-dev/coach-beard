@@ -49,8 +49,12 @@ function loadEnv() {
 export function getAgentConfig(): AgentConfig {
   const env = loadEnv();
 
-  // Priorità: ANTHROPIC > OPENAI_API_KEY (con baseUrl opzionale)
+  // Supporta multipli provider: ANTHROPIC, DEEPSEEK, GROQ, OPENROUTER, GEMINI, OPENAI
   const anthropicKey = env.ANTHROPIC_API_KEY || process.env.ANTHROPIC_API_KEY;
+  const deepseekKey = env.DEEPSEEK_API_KEY || process.env.DEEPSEEK_API_KEY;
+  const groqKey = env.GROQ_API_KEY || process.env.GROQ_API_KEY;
+  const openrouterKey = env.OPENROUTER_API_KEY || process.env.OPENROUTER_API_KEY;
+  const geminiKey = env.GEMINI_API_KEY || process.env.GEMINI_API_KEY || env.GOOGLE_API_KEY || process.env.GOOGLE_API_KEY;
   const openaiKey = env.OPENAI_API_KEY || process.env.OPENAI_API_KEY;
   const openaiBase = env.OPENAI_BASE_URL || process.env.OPENAI_BASE_URL;
   const modelOverride = env.COACH_BEARD_MODEL || process.env.COACH_BEARD_MODEL;
@@ -58,12 +62,32 @@ export function getAgentConfig(): AgentConfig {
   let provider: AgentConfig['provider'] = 'none';
   let apiKey: string | null = null;
   let baseUrl: string | undefined;
-  let model = 'claude-sonnet-4-5-20250929';
+  let model = 'deterministico';
 
   if (anthropicKey) {
     provider = 'anthropic';
     apiKey = anthropicKey;
-    model = modelOverride ?? 'claude-sonnet-4-5-20250929';
+    model = modelOverride ?? 'claude-3-5-sonnet-20241022';
+  } else if (deepseekKey) {
+    provider = 'openai-compat';
+    apiKey = deepseekKey;
+    baseUrl = openaiBase ?? 'https://api.deepseek.com/v1';
+    model = modelOverride ?? 'deepseek-chat';
+  } else if (groqKey) {
+    provider = 'openai-compat';
+    apiKey = groqKey;
+    baseUrl = openaiBase ?? 'https://api.groq.com/openai/v1';
+    model = modelOverride ?? 'llama-3.3-70b-versatile';
+  } else if (openrouterKey) {
+    provider = 'openai-compat';
+    apiKey = openrouterKey;
+    baseUrl = openaiBase ?? 'https://openrouter.ai/api/v1';
+    model = modelOverride ?? 'deepseek/deepseek-chat';
+  } else if (geminiKey) {
+    provider = 'openai-compat';
+    apiKey = geminiKey;
+    baseUrl = openaiBase ?? 'https://generativelanguage.googleapis.com/v1beta/openai/';
+    model = modelOverride ?? 'gemini-2.0-flash';
   } else if (openaiKey) {
     provider = 'openai-compat';
     apiKey = openaiKey;

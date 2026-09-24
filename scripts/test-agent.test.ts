@@ -194,7 +194,8 @@ async function main() {
 
     const config = getAgentConfig();
     test('E1: config caricato', config !== null);
-    test('E2: hasApiKey riflette la realtà', config.hasApiKey === !!process.env.ANTHROPIC_API_KEY);
+    const anyProviderKey = !!(process.env.ANTHROPIC_API_KEY || process.env.DEEPSEEK_API_KEY || process.env.GROQ_API_KEY || process.env.OPENROUTER_API_KEY || process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || process.env.OPENAI_API_KEY);
+    test('E2: hasApiKey riflette la realtà', config.hasApiKey === anyProviderKey);
     test('E3: datasetVersion non è vuota', config.datasetVersion !== 'unknown');
 
     const r = await runAgent(db as any, 'stato asta');
