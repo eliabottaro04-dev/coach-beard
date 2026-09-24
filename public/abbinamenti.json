@@ -1,0 +1,267 @@
+{
+  "generatedAt": "2026-09-04T15:27:01.225Z",
+  "byRole": {
+    "P": {
+      "header": "a 3:",
+      "expectedN": 3,
+      "combos": [
+        {
+          "teams": [
+            "genoa",
+            "parma",
+            "udinese"
+          ],
+          "combo": "genoa-parma-udinese",
+          "rating": 99,
+          "info": "37 partite facili"
+        },
+        {
+          "teams": [
+            "bologna",
+            "como",
+            "juventus"
+          ],
+          "combo": "bologna-como-juventus",
+          "rating": 93,
+          "info": "33 partite facili"
+        },
+        {
+          "teams": [
+            "bologna",
+            "inter",
+            "lecce"
+          ],
+          "combo": "bologna-inter-lecce",
+          "rating": 99,
+          "info": "37 partite facili"
+        },
+        {
+          "teams": [
+            "genoa",
+            "napoli",
+            "lecce"
+          ],
+          "combo": "genoa-napoli-lecce",
+          "rating": 99,
+          "info": "37 partite facili"
+        },
+        {
+          "teams": [
+            "fiorentina",
+            "udinese",
+            "torino"
+          ],
+          "combo": "fiorentina-udinese-torino",
+          "rating": 98,
+          "info": "35 partite facili"
+        },
+        {
+          "teams": [
+            "bologna",
+            "lecce",
+            "venezia100/100"
+          ],
+          "combo": "bologna-lecce-venezia100/100",
+          "rating": 100,
+          "info": "36 partite facili"
+        },
+        {
+          "teams": [
+            "parma",
+            "genoa",
+            "udinese"
+          ],
+          "combo": "parma-genoa-udinese",
+          "rating": 99,
+          "info": "35 partite facili"
+        },
+        {
+          "teams": [
+            "como",
+            "udinese"
+          ],
+          "combo": "como-udinese",
+          "rating": 92,
+          "info": "33 partite facili"
+        },
+        {
+          "teams": [
+            "atalanta",
+            "sassuolo"
+          ],
+          "combo": "atalanta-sassuolo",
+          "rating": 91,
+          "info": "32 partite facili"
+        },
+        {
+          "teams": [
+            "roma",
+            "bologna"
+          ],
+          "combo": "roma-bologna",
+          "rating": 91,
+          "info": "31 partite facili"
+        },
+        {
+          "teams": [
+            "inter",
+            "cagliari"
+          ],
+          "combo": "inter-cagliari",
+          "rating": 92,
+          "info": "32 partite facili"
+        },
+        {
+          "teams": [
+            "milan",
+            "parma"
+          ],
+          "combo": "milan-parma",
+          "rating": 89,
+          "info": "31 partite facili"
+        },
+        {
+          "teams": [
+            "frosinone",
+            "genoa"
+          ],
+          "combo": "frosinone-genoa",
+          "rating": 87,
+          "info": "30 partite facili"
+        },
+        {
+          "teams": [
+            "frosinone",
+            "torino"
+          ],
+          "combo": "frosinone-torino",
+          "rating": 88,
+          "info": "31 partite facili"
+        },
+        {
+          "teams": [
+            "lazio",
+            "lecce"
+          ],
+          "combo": "lazio-lecce",
+          "rating": 91,
+          "info": "32 partite facili"
+        },
+        {
+          "teams": [
+            "lazio",
+            "frosinone"
+          ],
+          "combo": "lazio-frosinone",
+          "rating": 88,
+          "info": "31 partite facili"
+        }
+      ]
+    },
+    "D": {
+      "header": "a 2:",
+      "expectedN": 2,
+      "combos": [
+        {
+          "teams": [
+            "como",
+            "udinese"
+          ],
+          "combo": "como-udinese",
+          "rating": null,
+          "info": "34 partite facili"
+        },
+        {
+          "teams": [
+            "atalanta",
+            "sassuolo"
+          ],
+          "combo": "atalanta-sassuolo",
+          "rating": null,
+          "info": "35 partite facili"
+        },
+        {
+          "teams": [
+            "bologna",
+            "roma"
+          ],
+          "combo": "bologna-roma",
+          "rating": null,
+          "info": "34 partite facili"
+        }
+      ]
+    },
+    "C": {
+      "header": "a 2:",
+      "expectedN": 2,
+      "combos": [
+        {
+          "teams": [
+            "juventus",
+            "lecce",
+            "genoa"
+          ],
+          "combo": "juventus-lecce-genoa",
+          "rating": null,
+          "info": "37 partite facili"
+        },
+        {
+          "teams": [
+            "atalanta",
+            "como",
+            "bologna"
+          ],
+          "combo": "atalanta-como-bologna",
+          "rating": null,
+          "info": "36 partite facili"
+        },
+        {
+          "teams": [
+            "fiorentina",
+            "roma",
+            "udinese"
+          ],
+          "combo": "fiorentina-roma-udinese",
+          "rating": null,
+          "info": "37 partite facili"
+        }
+      ]
+    },
+    "A": {
+      "header": "a 2:",
+      "expectedN": 2,
+      "combos": [
+        {
+          "teams": [
+            "como",
+            "roma",
+            "udinese"
+          ],
+          "combo": "como-roma-udinese",
+          "rating": null,
+          "info": "36 partite facili"
+        },
+        {
+          "teams": [
+            "napoli",
+            "lazio",
+            "atalanta"
+          ],
+          "combo": "napoli-lazio-atalanta",
+          "rating": null,
+          "info": "37 partite facili"
+        },
+        {
+          "teams": [
+            "fiorentina",
+            "inter",
+            "torino"
+          ],
+          "combo": "fiorentina-inter-torino",
+          "rating": null,
+          "info": "35 partite facili"
+        }
+      ]
+    }
+  }
+}

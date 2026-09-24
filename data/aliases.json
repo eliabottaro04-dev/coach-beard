@@ -1,0 +1,19 @@
+{
+  "_comment": "Alias di mapping calciatore. Ogni voce mappa un nome 'come appare nelle guide' verso l'ID canonico del listone. 'fuzzy' indica se accettare match parziale per cognome (true) o richiedere match esatto normalizzato (false). Aggiungi qui i nomi che le tue guide usano ma il listone non riconosce.",
+  "aliases": [
+    { "from": "Martinez L.",  "toPlayerId": 2764, "fuzzy": false, "note": "Lautaro Martinez, Inter, A" },
+    { "from": "Martinez Jo.", "toPlayerId": 5116, "fuzzy": false, "note": "Josep Martinez, Inter, P" },
+    { "from": "Paz N.",       "toPlayerId": 6875, "fuzzy": false, "note": "Nico Paz, Como, C" },
+    { "from": "Ramos G.",     "toPlayerId": 6397, "fuzzy": false, "note": "Ramos G., Milan, A" },
+    { "from": "McTominay",    "toPlayerId": 4777, "fuzzy": false, "note": "Scott McTominay, Napoli, C" },
+    { "from": "Hojlund",      "toPlayerId": 6052, "fuzzy": false, "note": "Rasmus Hojlund, Napoli, A" },
+    { "from": "Belahyane",    "toPlayerId": 6191, "fuzzy": false, "note": "Belahyane, Lazio, C" }
+  ],
+  "ambiguities": [
+    {
+      "name": "Martinez",
+      "_comment": "Se incontri solo 'Martinez' nelle guide, NON indovinare: bloccati e segnala. Il sistema chiederà di specificare 'Martinez L.' o 'Martinez Jo.'.",
+      "candidates": [2764, 5116]
+    }
+  ]
+}

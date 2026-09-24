@@ -1,0 +1,292 @@
+{
+  "generatedAt": "2026-09-02T13:37:57.805Z",
+  "strict": true,
+  "sources": [
+    {
+      "name": "Guida oggettiva",
+      "file": "Guida_Asta_202627.xlsx · Giocatori",
+      "rows": 504
+    },
+    {
+      "name": "Ballottaggi",
+      "file": "Guida_Asta_202627.xlsx · Ballottaggi",
+      "rows": 70
+    },
+    {
+      "name": "Note",
+      "file": "Guida_Asta_202627.xlsx · Note",
+      "rows": 155
+    },
+    {
+      "name": "Guida personale",
+      "file": "StrategiaFanta.xlsx",
+      "rows": 579
+    },
+    {
+      "name": "Pupilli",
+      "file": "Pupilli.xlsx",
+      "rows": 5
+    }
+  ],
+  "resolver": {
+    "totalInputsProcessed": 504,
+    "resolved": 969,
+    "ambiguousCount": 0,
+    "unresolvedCount": 91,
+    "ambiguous": [],
+    "unresolved": [
+      {
+        "name": "Vismara",
+        "sq": "Atalanta",
+        "ruolo": "P"
+      },
+      {
+        "name": "Ahanor",
+        "sq": "Atalanta",
+        "ruolo": "D"
+      },
+      {
+        "name": "De Roon",
+        "sq": "Atalanta",
+        "ruolo": "C"
+      },
+      {
+        "name": "Sulemana I.",
+        "sq": "Atalanta",
+        "ruolo": "C"
+      },
+      {
+        "name": "Rowe",
+        "sq": "Bologna",
+        "ruolo": "C"
+      },
+      {
+        "name": "Zappa",
+        "sq": "Cagliari",
+        "ruolo": "D"
+      },
+      {
+        "name": "Prati",
+        "sq": "Cagliari",
+        "ruolo": "C"
+      },
+      {
+        "name": "Albarracin",
+        "sq": "Cagliari",
+        "ruolo": "A"
+      },
+      {
+        "name": "Esposito Se.",
+        "sq": "Cagliari",
+        "ruolo": "A"
+      },
+      {
+        "name": "Tornqvist",
+        "sq": "Como",
+        "ruolo": "P"
+      },
+      {
+        "name": "Cuenca A.",
+        "sq": "Como",
+        "ruolo": "D"
+      },
+      {
+        "name": "Van Der Brempt",
+        "sq": "Como",
+        "ruolo": "D"
+      },
+      {
+        "name": "Fadera",
+        "sq": "Como",
+        "ruolo": "C"
+      },
+      {
+        "name": "Kuhn",
+        "sq": "Como",
+        "ruolo": "A"
+      },
+      {
+        "name": "Morata",
+        "sq": "Como",
+        "ruolo": "A"
+      },
+      {
+        "name": "Fabbian",
+        "sq": "Fiorentina",
+        "ruolo": "C"
+      },
+      {
+        "name": "Kean",
+        "sq": "Fiorentina",
+        "ruolo": "A"
+      },
+      {
+        "name": "Corrado",
+        "sq": "Frosinone",
+        "ruolo": "D"
+      },
+      {
+        "name": "Gelli J.",
+        "sq": "Frosinone",
+        "ruolo": "D"
+      },
+      {
+        "name": "Martin",
+        "sq": "Genoa",
+        "ruolo": "D"
+      },
+      {
+        "name": "Matturro",
+        "sq": "Genoa",
+        "ruolo": "D"
+      },
+      {
+        "name": "Di Gregorio",
+        "sq": "Juventus",
+        "ruolo": "P"
+      },
+      {
+        "name": "Perin",
+        "sq": "Juventus",
+        "ruolo": "P"
+      },
+      {
+        "name": "Miretti",
+        "sq": "Juventus",
+        "ruolo": "C"
+      },
+      {
+        "name": "Ricci S.",
+        "sq": "Milan",
+        "ruolo": "C"
+      },
+      {
+        "name": "Leao",
+        "sq": "Milan",
+        "ruolo": "A"
+      },
+      {
+        "name": "Nkunku",
+        "sq": "Milan",
+        "ruolo": "A"
+      },
+      {
+        "name": "Gimenez",
+        "sq": "Milan",
+        "ruolo": "A"
+      },
+      {
+        "name": "Pizzignacco",
+        "sq": "Monza",
+        "ruolo": "P"
+      },
+      {
+        "name": "Delli Carri",
+        "sq": "Monza",
+        "ruolo": "D"
+      },
+      {
+        "name": "Petagna",
+        "sq": "Monza",
+        "ruolo": "A"
+      },
+      {
+        "name": "Mazzocchi",
+        "sq": "Napoli",
+        "ruolo": "D"
+      },
+      {
+        "name": "Folorunsho",
+        "sq": "Napoli",
+        "ruolo": "C"
+      },
+      {
+        "name": "Suzuki",
+        "sq": "Parma",
+        "ruolo": "P"
+      },
+      {
+        "name": "Circati",
+        "sq": "Parma",
+        "ruolo": "D"
+      },
+      {
+        "name": "Sorensen O.",
+        "sq": "Parma",
+        "ruolo": "C"
+      },
+      {
+        "name": "Ziolkowski",
+        "sq": "Roma",
+        "ruolo": "D"
+      },
+      {
+        "name": "Missori",
+        "sq": "Sassuolo",
+        "ruolo": "D"
+      },
+      {
+        "name": "Iannoni",
+        "sq": "Sassuolo",
+        "ruolo": "C"
+      },
+      {
+        "name": "Pinamonti",
+        "sq": "Sassuolo",
+        "ruolo": "A"
+      },
+      {
+        "name": "Moro L.",
+        "sq": "Sassuolo",
+        "ruolo": "A"
+      },
+      {
+        "name": "Pedersen",
+        "sq": "Torino",
+        "ruolo": "D"
+      },
+      {
+        "name": "Njie",
+        "sq": "Torino",
+        "ruolo": "C"
+      },
+      {
+        "name": "Ilic",
+        "sq": "Torino",
+        "ruolo": "C"
+      },
+      {
+        "name": "Mlacic",
+        "sq": "Udinese",
+        "ruolo": "D"
+      },
+      {
+        "name": "Camara A.",
+        "sq": "Udinese",
+        "ruolo": "C"
+      },
+      {
+        "name": "Buksa",
+        "sq": "Udinese",
+        "ruolo": "A"
+      },
+      {
+        "name": "De Roon",
+        "sq": "Atalanta",
+        "ruolo": "C"
+      },
+      {
+        "name": "Ahanor",
+        "sq": "Atalanta",
+        "ruolo": "D"
+      },
+      {
+        "name": "Zappa",
+        "sq": "Cagliari",
+        "ruolo": "D"
+      }
+    ],
+    "aliasSuggestions": []
+  },
+  "blocked": true
+}

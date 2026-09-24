@@ -10,19 +10,17 @@ import type { AuctionSnapshot } from './events';
 import type { AuctionEvent } from './events';
 import { replayEffective, listAllEvents } from './events';
 import { LEAGUE_RULES, ROSTER_SIZE } from './league-rules';
-import { readFileSync, existsSync } from 'fs';
-import { join } from 'path';
+import { loadDataset } from './dataset';
 
 // ─────────────────────────────────────────────────
 // Dataset (letto una volta, sempre dalla stessa versione locked)
+// prefers public/ (Vercel) then data/ (local dev)
 // ─────────────────────────────────────────────────
 
 let _ds: any = null;
 export function getDataset() {
   if (_ds) return _ds;
-  const path = join(process.cwd(), 'data', 'dataset.json');
-  if (!existsSync(path)) throw new Error('dataset.json non trovato. Esegui npm run build:dataset.');
-  _ds = JSON.parse(readFileSync(path, 'utf-8'));
+  _ds = loadDataset();
   return _ds;
 }
 

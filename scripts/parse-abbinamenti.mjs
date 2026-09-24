@@ -19,6 +19,7 @@ const PROJECT_ROOT = join(__dirname, '..');
 
 const STRATEGIA_PATH = join(PROJECT_ROOT, 'Dati', 'Strategie', 'StrategiaFanta.xlsx');
 const OUT_PATH = join(PROJECT_ROOT, 'data', 'abbinamenti.json');
+const PUBLIC_OUT_PATH = join(PROJECT_ROOT, 'public', 'abbinamenti.json');
 
 const TEAM_ALIAS = {
   // abbreviazioni usate nella strategia → nome canonico nel listone
@@ -182,5 +183,6 @@ for (const { sheet, role, abbinCol } of ROLE_SHEETS) {
 }
 
 writeFileSync(OUT_PATH, JSON.stringify(out, null, 2), 'utf-8');
+writeFileSync(PUBLIC_OUT_PATH, JSON.stringify(out, null, 2), 'utf-8');
 console.log(`\n📄 Scritto: ${OUT_PATH}`);
 console.log(`   P: ${out.byRole.P.combos.length} | D: ${out.byRole.D.combos.length} | C: ${out.byRole.C.combos.length} | A: ${out.byRole.A.combos.length}`);

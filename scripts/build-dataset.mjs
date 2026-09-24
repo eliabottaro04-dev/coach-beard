@@ -502,9 +502,13 @@ if (STRICT && (allAmbiguous.length > 0 || allUnresolved.length > 0)) {
 }
 
 const outDir = resolve(ROOT, 'data');
+const publicDir = resolve(ROOT, 'public');
 mkdirSync(outDir, { recursive: true });
+mkdirSync(publicDir, { recursive: true });
 const outPath = resolve(outDir, 'dataset.json');
+const publicPath = resolve(publicDir, 'dataset.json');
 writeFileSync(outPath, JSON.stringify(out, null, 2), 'utf-8');
+writeFileSync(publicPath, JSON.stringify(out, null, 2), 'utf-8');
 const kb = (readFileSync(outPath).length / 1024).toFixed(1);
 console.log(`\n✅ Scritto ${outPath}  (${kb} KB)`);
 console.log(`   Calciatori: ${out.stats.totalPlayers} | Ruoli: P=${ruoli.P} D=${ruoli.D} C=${ruoli.C} A=${ruoli.A}`);

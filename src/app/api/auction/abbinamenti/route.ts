@@ -2,8 +2,7 @@
 // e li arricchisce con i giocatori disponibili dal dataset.
 
 import { NextResponse } from 'next/server';
-import { readFileSync, existsSync } from 'fs';
-import { join } from 'path';
+import { loadAbbinamenti, loadDataset } from '@/lib/dataset';
 import { getDb } from '@/lib/db-factory';
 import { getDataset } from '@/lib/agent-tools';
 import { replayEffective, loadManagerNames } from '@/lib/events';
@@ -36,12 +35,8 @@ function norm(s: string): string {
 
 export async function GET() {
   try {
-    const abbinPath = join(process.cwd(), 'data', 'abbinamenti.json');
-    if (!existsSync(abbinPath)) {
-      return NextResponse.json({ ok: false, error: 'abbinamenti.json non trovato. Esegui npm run build:abbinamenti.' }, { status: 404 });
-    }
-    const abbin = JSON.parse(readFileSync(abbinPath, 'utf-8'));
-    const ds = getDataset();
+    const abbin = loadAbbinamenti();
+    const ds = loadDataset();
     const db = await getDb();
     const managerNames = await loadManagerNames(db);
     const snap = await replayEffective(db, ds, managerNames);

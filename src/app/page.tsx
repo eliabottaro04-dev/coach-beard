@@ -36,7 +36,7 @@ export default function HomePage() {
     // pinga il backend per materializzare il DB SQLite
     fetch("/api/health")
       .then((r) => r.json())
-      .then((j) => setDbStatus(j.ok ? `DB ok · ${j.managers.length} manager · ${j.config.league_name}` : `DB errore: ${j.error}`))
+      .then((j) => setDbStatus(j.ok ? `DB ok · ${j.managers} manager · ${j.config?.league_name || LEAGUE_RULES.leagueName}` : `DB errore: ${j.error}`))
       .catch((e) => setDbStatus(`DB non raggiungibile: ${e.message}`));
     fetch("/api/dataset")
       .then((r) => r.json())

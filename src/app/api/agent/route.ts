@@ -4,19 +4,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { runAgent } from '@/lib/agent';
 import { getDb } from '@/lib/db-factory';
-import { readFileSync, existsSync } from 'fs';
-import { join } from 'path';
+import { loadDataset } from '@/lib/dataset';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
-
-function getDatasetLocal() {
-  const path = join(process.cwd(), 'data', 'dataset.json');
-  if (!existsSync(path)) {
-    throw new Error('dataset.json non trovato. Esegui npm run build:dataset.');
-  }
-  return JSON.parse(readFileSync(path, 'utf-8'));
-}
 
 export async function POST(req: NextRequest) {
   try {
@@ -29,7 +20,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    try { getDatasetLocal(); }
+    try { loadDataset(); }
     catch (err: any) {
       return NextResponse.json(
         { error: err.message, hint: 'npm run build:dataset' },
